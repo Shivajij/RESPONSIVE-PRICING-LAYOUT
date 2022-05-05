@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         .mdrow{
+      display: grid;
+      grid-template-columns: repeat(3,1fr);
+      grid-template-rows: repeat(1,auto);
+      gap: 20px;
+      width: 55%;
+      margin: auto;
+      margin-top: 30px;
+      text-align: center;
+   
+      
+    }
+    .mdrow>div{
+        box-shadow: rgba(227, 227, 241, 0.778) 0px 7px 29px 0px;
+    }
+    h1{
+        text-align: center;
+    }
+    p{
+        text-align: center;
+        margin-top: 20px;
+        
+    }
+    h6{
+        text-align: center;
+        margin-top: -20px;
+        
+    }
+    h3{
+        text-align: center;
+        /* margin-top: -20px; */
+        
+    }
+    #ost{
+        color: rgb(32, 226, 90);
+    } 
+    #tst{
+        color: rgb(210, 108, 24);
+    }
+    #thst{
+        color: rgb(32, 180, 229);
+    }
+   #btn{
+    border-radius: 15px;
+    justify-content: center;
+    align-items: center;
+}
+@media all and (min-width: 451px) and (max-width: 750px) {
+       .mdrow {
+          grid-template-columns: repeat(2, 1fr);
+          grid-template-rows: repeat(2, 200px);
+        }
+      }
+      @media all and (min-width: 100px) and (max-width: 450px) {
+        .mdrow {
+          grid-template-columns: repeat(1, 1fr);
+          grid-template-rows: repeat(3, 120px);
+        }
+      }
+   
+    </style>
+</head>
+<body>
+    <h1>Choose a plan that right for your business</h1>
+    <p>We collect reviews from our users so you can get an honest opinion of what an experience with our website are really likel</p>
+    <div class="mdrow">
+        <div>
+            <h3>Starter Plan</h3>
+            <h1 id="ost">Free</h1>
+            <h6>Per month</h6>
+            <p>We collect reviews from our users so you can get an honest opinion of what an experience with our website.</p>
+            <button id="btn">Start Now</button>
+        </div>
+        <div>
+            <h3>Business Plan</h3>
+            <h1 id="tst">$39.00</h1>
+            <h6>Per month</h6>
+            <p>We collect reviews from our users so you can get an honest opinion of what an experience with our website.</p>
+            <button id="btn" style="background-color: blue; color: white;">Start Now</button>
+        </div>
+        <div>
+            <h3>Premium Plan</h3>
+            <h1 id="thst">$59.00</h1>
+            <h6>Per month</h6>
+            <p>We collect reviews from our users so you can get an honest opinion of what an experience with our website.</p>
+             <button id="btn" style="color: blue;">Start Now</button>
+        </div>
+
+    </div>
+</body>
+</html>
